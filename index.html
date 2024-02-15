@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+
+    
+
     <!--=====================  Start Header Area  ====================-->
     <header class="header_area">
       <div class="container">
@@ -51,6 +54,12 @@
                 ></span>
               </a>
             </li>
+            <li class="link-help donate_btn">
+              <a href="#"
+                >DONATE 
+              </a>
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -140,7 +149,7 @@
           <div class="row-video">
             <div class="col-video">
               <a
-                href="#"
+                href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -174,7 +183,7 @@
             </div>
             <div class="col-video">
               <a
-                href="#"
+              href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -209,7 +218,7 @@
             <div class="col-video">
                
               <a
-                href="#"
+              href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -244,7 +253,7 @@
             <div class="col-video">
                
               <a
-                href="#"
+              href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -279,7 +288,7 @@
             <div class="col-video">
                
               <a
-                href="#"
+              href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -314,7 +323,7 @@
             <div class="col-video">
                
               <a
-                href="#"
+                href="single_blog.html"
                 class="p"
               >
                 <div class="img-box-content">
@@ -437,7 +446,83 @@
         </div>
     </footer>
     <!--=====================  End Header Area  ====================-->
+    <div class="donate_fixed_btn">
+        <a href="#"><i class="fas fa-heart"></i> DONATE </a>
+    </div>
 
+    <!-- Donate POPUP  -->
+    <div class="donate_popup">
+        <div class="donate_row">
+            <div class="donate_left">
+                <img src="assets/images/donate.avif" alt="">
+                <div class="donate_logo">
+                    <img src="assets/images/logo.avif" alt="">
+                </div>
+                <div class="donate_text"> 
+                    <h3>Love is at the root of our resistance.</h3>
+                    <p> Know Your Rights Camp is advancing the liberation and well-being of Black and Brown communities through education,  self-empowerment, mass-mobilization and the creation of new systems that elevate the next generation of change leaders.</p>
+                </div>
+            </div>
+            <div class="donate_right">
+                <div class="donate_right_box"> 
+                    <div class="donate_tabs">
+                        <div class="donate_tabs_content">
+                            
+                    <h4> <i class="fa-solid fa-lock"></i> Secure donation</h4>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Give once</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"> <i class="fas fa-heart"></i> Monthly</button>
+                                </li> 
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="show_give_data">
+                                        <ul>
+                                            <li><a href="#">$7,000</a></li>
+                                            <li><a href="#">$3,500</a></li>
+                                            <li><a href="#">$1,500</a></li>
+                                            <li><a href="#">$1,000</a></li>
+                                            <li><a href="#">$650</a></li>
+                                            <li><a href="#">$600</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="show_give_data">
+                                        <ul>
+                                            <li><a href="#">$7,000</a></li>
+                                            <li><a href="#">$3,500</a></li>
+                                            <li><a href="#">$1,500</a></li>
+                                            <li><a href="#">$1,000</a></li>
+                                            <li><a href="#">$650</a></li>
+                                            <li><a href="#">$600</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="donate_input">
+                                <p>$</p>
+                                <input type="text" name="" id="">
+                                <select name="" id="">
+                                    <option value="USD">USD</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="INR">INR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="donate_btn">
+                            <button>Donate monthly</button>
+                        </div>
+                    </div> 
+                      
+                </div>
+            </div>
+        </div>
+        <a href="#" class="donate_times"><i class="fas fa-times"></i></a>
+    </div>
 
 
     <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
@@ -446,6 +531,7 @@
     <script src="assets/js/popper.min.js"></script>
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Modernizr -->
     <script src="assets/js/modernizr-3.11.2.min.js"></script>
     <!-- Custom JS (Handed)-->

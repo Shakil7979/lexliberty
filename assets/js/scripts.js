@@ -8,7 +8,7 @@ $(document).ready(function(){
 					'<iframe src="https://www.youtube.com/embed/4D8EJ8vIYYE?si=edMxOXUP_Fkh9wJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 					'<iframe src="https://www.youtube.com/embed/f6dXahYyrZQ?si=AchQ4ud9dy_tZemC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
 					'<iframe src="https://www.youtube.com/embed/-nXNYeX-fIU?si=P1aEZN01ZbRMqx4R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-				]
+				];
 
 	$(document).on('click','.play',function(){  
 		var attr_data_id = $(this).attr('data_id'); 
@@ -27,6 +27,39 @@ $(document).ready(function(){
 		$('.popup_overlay').hide();
 		return false;
 	});
+
+	var burger_count = 0;
+	$(document).on('click','.burger',function(){ 
+		if(burger_count == 0){ 
+			$(this).addClass('is-active');
+			$('.menu').addClass('is-active'); 
+
+			burger_count = 1;
+		}else{
+			$(this).removeClass('is-active');
+			$('.menu').removeClass('is-active'); 
+
+			burger_count = 0;
+		} 
+ 
+
+		return false;
+	});
+
+
+	$(document).on('click','.show_give_data ul li a',function(){
+		var show_give_data = $(this).html();
+
+		$('.donate_input input').val(show_give_data); 
+	});	
+
+	$(document).on('click','.donate_times',function(){ 
+		$('.donate_popup').hide(); 
+	});	
+
+	$(document).on('click','.donate_btn a, .donate_fixed_btn a',function(){ 
+		$('.donate_popup').show(); 
+	});	
 
 	
 
