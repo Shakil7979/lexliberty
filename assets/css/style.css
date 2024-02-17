@@ -1395,6 +1395,20 @@ body{
 }
 
 
+#myTabContent .tab-pane {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 90%; 
+}
+
+
+#myTabContent {
+	height: 100%;
+}
+
+
+
 /*======================  Blog Page CSS  ======================*/
 
 
